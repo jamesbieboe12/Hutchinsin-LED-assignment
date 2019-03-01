@@ -18,7 +18,7 @@ void loop(){
         //blue and yellow light up and meet in the middle and the led lights green
         leds[67] = CRGB::Green; 
         FastLED.show();
-        delay(500);
+        delay(50);
         leds[i] = CRGB :: Green;
         delay(100);
         leds[(NUM_LEDS-i)] = CRGB :: Black;
