@@ -24,18 +24,20 @@ void loop(){
         leds[(NUM_LEDS-i)] = CRGB :: Black;
         //tells leds to go green then black
         leds[i] = CRGB :: Red;
-        //the leds finishes off as a red light
+        //the leds finishes off as a red light and is earased by a yelloe light
     }
      for(int i=0; i<NUM_LEDS; i++){
          leds[i] = CRGB :: White;
-        leds[(NUM_LEDS-i)] = CRGB :Red;
+        leds[(NUM_LEDS-i)] = CRGB ::Red;
         FastLED.show();
         delay(100);
         leds[(NUM_LEDS - i)] = CRGB :: Black;
+         //white and red meat up in center and then earase each other then its is all earased
 }
     for(int i=0; i<NUM_LEDS; i+=2){
        leds[i] = CRGB :: White; 
        leds[71] = CRGB :: Green;
+        //everything turns green and a white dot is in the middle 
     }
 }
         
