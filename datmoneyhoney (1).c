@@ -26,4 +26,17 @@ void loop(){
         leds[i] = CRGB :: Red;
         //the leds finishes off as a red light
     }
+     for(int i=0; i<NUM_LEDS; i++){
+         leds[i] = CRGB :: White;
+        leds[(NUM_LEDS-i)] = CRGB :Red;
+        FastLED.show();
+        delay(30);
 }
+    for(int i=0; i<NUM_LEDS; i++){
+       leds[20] = CRGB :: White; 
+        leds[130] = CRGB :: White;
+        leds[50] = CRGB :: White;
+        leds[70] = CRGB :: White;
+    }
+}
+        
