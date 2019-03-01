@@ -30,13 +30,12 @@ void loop(){
          leds[i] = CRGB :: White;
         leds[(NUM_LEDS-i)] = CRGB :Red;
         FastLED.show();
-        delay(30);
+        delay(100);
+        leds[(NUM_LEDS - i)] = CRGB :: Black;
 }
-    for(int i=0; i<NUM_LEDS; i++){
-       leds[20] = CRGB :: White; 
-        leds[130] = CRGB :: White;
-        leds[50] = CRGB :: White;
-        leds[70] = CRGB :: White;
+    for(int i=0; i<NUM_LEDS; i+=2){
+       leds[i] = CRGB :: White; 
+       leds[71] = CRGB :: Green;
     }
 }
         
